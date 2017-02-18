@@ -38,7 +38,7 @@ app.use(function (err, req, res, next) {
 
 app.listen(process.env.PORT || 3000, function() {
   if (process.env.PORT) {
-    console.log("The server is running on Heroku");
+    console.log("The server is running on ", process.env.PORT);
   } else {
     console.log("The server is running Locally on port 3000!");
   }

@@ -6,7 +6,7 @@ mongoose.connect(process.env.MONGODB_URI, function(err) {
   if(err) {
     console.log('Failed connecting to Mongodb! -sc');
   } else {
-    console.log('Successfully conected to mongodb!');
+    console.log('Successfully connected to mongodb!');
   }
 });
 

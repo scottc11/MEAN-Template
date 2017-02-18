@@ -34,28 +34,9 @@ angular.module('listPlz', ['ngRoute'])
     $rootScope.appBackground = "";
 
 
-    // NOTE: WHEN USER clciks anywhere on a page, trigger this, giving you the option to close any dropdown menus etc.
-
+    // NOTE: WHEN USER clicks anywhere on a page, trigger this, giving you the option to close any dropdown menus etc.
     angular.element(document).on("click", function(e) {
 		    $rootScope.$broadcast("documentClicked", angular.element(e.target));
 	  });
 
-
-    // make a route accessible only to logged in users, by protecting the /profile path.
-    $rootScope.$on('$routeChangeStart', function(event, nextRoute, currentRoute) {
-      if ($location.path() === '/profile' && !authService.isLoggedIn) {
-        $location.path('/');
-      }
-      // updating the nav when logging in
-      if ($location.path() === '/profile' && authService.isLoggedIn) {
-        $rootScope.updateNav();
-      }
-    });
   }]);
-
-
-
-// TODO: add strike-through when item.purchased is == true
-// TODO: create an ng-model="item.purchased" and attach
-// it to the <input type="checkbox"> html.  This will be used
-// mark a users item as 'purchased' by setting item.purchased to 'true'
