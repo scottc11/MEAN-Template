@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('listPlz')
+angular.module('templateApp')
 
-.controller('mainCtrl', function($scope, dataService) {
+.controller('mainCtrl', function($scope, $location, dataService) {
   var app = this;
 
 });

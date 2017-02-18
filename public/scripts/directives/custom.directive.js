@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('listPlz')
+angular.module('templateApp')
   .directive('myDirective', function() {
     return {
       template: "This is my custom directive",
