@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EuroPanels</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" media="screen">
+
+  <!-- Load external fonts here -->
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600|Aldrich|Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Shade|Monofett" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,700" rel="stylesheet">
+
+
+  <!-- Load main css here -->
+  <link rel="stylesheet" href="styles/global.css" media="screen">
+  <link rel="stylesheet" href="styles/colors.css" media="screen">
+  <link rel="stylesheet" href="styles/main.css" media="screen">
+  <link rel="stylesheet" href="styles/responsive.css" media="screen">
+
+</head>
+
+<body ng-app="listPlz" class="bg-color-sunset-orange">
+
+  <div ng-controller="mainCtrl as app" class="container">
+    <div class="row">
+
+      <main id="app-container" ng-class="$root.appBackground" class="col-xs-12 box-shadow-outer-heavy padding-none margin-top-40">
+        <div ng-view></div>
+      </main>
+
+      <!-- <ng-include src="'templates/footer.html'"></ng-include> -->
+
+    </div>
+  </div>
+
+
+  <footer>
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="vendor/masonry/masonry.pkgd.min.js"></script>
+
+    <!-- ANGULAR APPLICATION SCRIPT -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+
+
+    <!-- controllers -->
+    <script type="text/javascript" src="scripts/controllers/main.ctrl.js"></script>
+
+
+    <!-- services -->
+    <script type="text/javascript" src="scripts/services/data.service.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="scripts/directives/custom.directive.js"></script>
+
+
+    <!-- CUSTOM SCRIPTS -->
+
+
+  </footer>
+
+</body>
+
+</html>

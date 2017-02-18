@@ -1,0 +1,42 @@
+/*--------------------------------------*/
+/*        COLOR CLASSES                 */
+/*--------------------------------------*/
+
+
+
+.color-accent-sunset-orange {color: #FE5F55;}
+.color-accent-giants-orange {color: #F86624;}
+.color-accent-desire {color: #EA3546;}
+.color-accent-light-blue {color: #49deff;}
+.color-accent-black {color: #000000;}
+.color-accent-yellow {color: #F9C80E;}
+.color-accent-white {color: #FFFFFF;}
+
+.bg-color-sunset-orange {background: #FE5F55;}
+.bg-color-giants-orange {background: #F86624;}
+.bg-color-desire {background: #EA3546;}
+.bg-color-baby-blue {background: #49deff;}
+.bg-color-light-blue {background: #85e9ff;}
+.bg-color-dark-grey {background: #383737;}
+.bg-color-light-grey {background: #4e4e4e;}
+.bg-color-yellow {background: #F9C80E;}
+.bg-color-white {background: #ffffff;}
+
+
+.hr-sunset-orange {
+  border-color: #FE5F55;
+  border-width: 1px;
+  margin: 0;
+}
+.hr-baby-blue {
+  border-color: #49deff;
+  border-width: 1px;
+  margin: 0;
+}
+
+.hr-white {
+  border-color: #ffffff;
+  border-width: 1px;
+  margin: 0;
+  margin-bottom: 20px;
+}
